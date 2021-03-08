@@ -1,0 +1,25 @@
+<head>
+    <title>Schooner Dice</title>
+    <script type="text/javascript" src="sd-module.js"></script>
+    <script type="text/javascript" src="schooner-dice.js"></script>
+</head>
+
+<body onload="init();">
+    Enter comma-separated dice rolls, or blank for random dice rolls
+    <input type="text" id="roll-input"><br>
+    Choose a category to score:
+    <select id="category-select">
+    </select>
+    <a href="javascript:scoreOne()"><input type="button" value="Score"></a><br>
+    <a href="javascript:showTop()"><input type="button" value="Show Top Categories"></a><br>
+    <a href="javascript:showAll()"><input type="button" value="Show All"></a><br>
+    <p id="roll-results"></p>
+    <p id="qualified"></p>
+    <p id="points"></p>
+</body>
+
+<div id="templates" style="display:none;">
+    <span id="die-template">&nbsp;&nbsp;&nbsp;</span>
+    <span id="qualified-template">Category: </span>
+    <span id="points-template">Points: </span>
+</div>
